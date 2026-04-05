@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="/posts" class="back-link">← Back to Posts</a>
+        
+        <div class="post">
+            <div class="post-header">
+                <h3 class="username">@<%= post.username %></h3>
+                <span class="post-id">ID: <%= post.id %></span>
+            </div>
+            <div class="post-content"><%= post. content %></div>
+            <div class="post-actions">
+                <a href="/posts/<%= post.id %>/edit"><button class="button" id="edit">Edit</button></a>
+                <a href="/posts"><button class="button" id="delete">Back to Posts</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
